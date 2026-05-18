@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>التواصل — ISMB 2026</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:3rem;max-width:1000px;margin:0 auto;align-items:start;}
+.contact-info-box{
+  background:rgba(11,30,56,.6);border:1px solid var(--border);
+  border-radius:20px;padding:2.5rem;
+}
+.ci-item{display:flex;gap:1rem;align-items:flex-start;margin-bottom:1.8rem;padding-bottom:1.8rem;border-bottom:1px solid rgba(66,165,245,.08);}
+.ci-item:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+.ci-icon{
+  width:46px;height:46px;border-radius:12px;
+  background:linear-gradient(135deg,var(--blue),var(--cyan));
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.2rem;flex-shrink:0;
+}
+.ci-label{font-size:.75rem;color:var(--muted);margin-bottom:.2rem;}
+.ci-value{font-size:.95rem;font-weight:600;color:#fff;}
+.ci-value a{color:var(--sky);text-decoration:none;}
+.ci-value a:hover{text-decoration:underline;}
+
+.contact-form{
+  background:rgba(11,30,56,.6);border:1px solid var(--border);
+  border-radius:20px;padding:2.5rem;
+}
+.form-title{font-size:1.1rem;font-weight:700;color:#fff;margin-bottom:.3rem;}
+.form-sub{font-size:.82rem;color:var(--muted);margin-bottom:1.8rem;}
+.form-group{margin-bottom:1.2rem;}
+.form-group label{display:block;font-size:.82rem;color:var(--sky2);margin-bottom:.4rem;font-weight:500;}
+.form-group input,.form-group textarea,.form-group select{
+  width:100%;background:rgba(6,15,30,.8);
+  border:1px solid rgba(66,165,245,.25);border-radius:10px;
+  padding:.8rem 1rem;color:#fff;font-family:'Tajawal',sans-serif;font-size:.9rem;
+  transition:border-color .25s;outline:none;
+  direction:rtl;
+}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--sky);}
+.form-group textarea{height:110px;resize:vertical;}
+.form-group select option{background:#0b1e38;color:#fff;}
+.form-note{font-size:.78rem;color:var(--muted);margin-top:1rem;line-height:1.7;}
+
+@media(max-width:768px){.contact-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">
+    <img src="assets/logo.png" alt="ISMB">
+    <div class="nav-brand-text">
+      <div class="t1">الجمعية العراقية لعلم الأحياء المجهرية</div>
+      <div class="t2">Iraqi Society for Microbiology — ISMB</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">الرئيسية</a></li>
+    <li><a href="about.html">عن المؤتمر</a></li>
+    <li><a href="themes.html">المحاور</a></li>
+    <li><a href="dates.html">المواعيد</a></li>
+    <li><a href="participation.html">المشاركة</a></li>
+    <li><a href="contact.html" class="active">التواصل</a></li>
+    <li><a href="https://edas.info" target="_blank" class="nav-cta">تقديم البحث ←</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="index.html">🏠 الرئيسية</a></li>
+    <li><a href="about.html">🔬 عن المؤتمر</a></li>
+    <li><a href="themes.html">📋 المحاور</a></li>
+    <li><a href="dates.html">📅 المواعيد</a></li>
+    <li><a href="participation.html">📝 المشاركة</a></li>
+    <li><a href="contact.html">✉️ التواصل</a></li>
+    <li><a href="https://edas.info" target="_blank">🚀 تقديم البحث عبر EDAS</a></li>
+  </ul>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-badge">CONTACT US</div>
+  <h1>تواصل <span>معنا</span></h1>
+  <p>نسعد بالإجابة على استفساراتكم حول المؤتمر العلمي الأول</p>
+</div>
+
+<div style="padding:5rem 2rem;max-width:1200px;margin:0 auto;">
+  <div class="contact-grid">
+    <!-- Contact Info -->
+    <div>
+      <div class="contact-info-box">
+        <div style="font-size:1.1rem;font-weight:700;color:#fff;margin-bottom:1.8rem;padding-bottom:1rem;border-bottom:1px solid var(--border);">
+          📬 معلومات التواصل
+        </div>
+
+        <div class="ci-item">
+          <div class="ci-icon">📧</div>
+          <div>
+            <div class="ci-label">البريد الإلكتروني الرسمي</div>
+            <div class="ci-value"><a href="mailto:conference@ism-conf.org">conference@ism-conf.org</a></div>
+          </div>
+        </div>
+
+        <div class="ci-item">
+          <div class="ci-icon">🌐</div>
+          <div>
+            <div class="ci-label">الموقع الإلكتروني</div>
+            <div class="ci-value"><a href="https://ism-conf.org" target="_blank">ism-conf.org</a></div>
+          </div>
+        </div>
+
+        <div class="ci-item">
+          <div class="ci-icon">💻</div>
+          <div>
+            <div class="ci-label">منصة تقديم البحوث</div>
+            <div class="ci-value"><a href="https://edas.info" target="_blank">edas.info</a></div>
+          </div>
+        </div>
+
+        <div class="ci-item">
+          <div class="ci-icon">🏛️</div>
+          <div>
+            <div class="ci-label">الجهة المنظِّمة</div>
+            <div class="ci-value">الجمعية العراقية لعلم الأحياء المجهرية — ISMB</div>
+          </div>
+        </div>
+
+        <div class="ci-item">
+          <div class="ci-icon">📅</div>
+          <div>
+            <div class="ci-label">موعد المؤتمر</div>
+            <div class="ci-value">٢١ – ٢٢ أكتوبر ٢٠٢٦</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick links -->
+      <div style="margin-top:1.5rem;background:rgba(11,30,56,.6);border:1px solid var(--border);border-radius:16px;padding:1.5rem;">
+        <div style="font-size:.9rem;font-weight:700;color:#fff;margin-bottom:1rem;">روابط سريعة</div>
+        <div style="display:flex;flex-direction:column;gap:.7rem;">
+          <a href="participation.html" style="display:flex;align-items:center;gap:.7rem;color:var(--muted);text-decoration:none;font-size:.85rem;padding:.5rem;border-radius:8px;transition:all .2s;" onmouseover="this.style.color='var(--sky)';this.style.background='rgba(66,165,245,.08)'" onmouseout="this.style.color='var(--muted)';this.style.background='transparent'">
+            📝 دليل المشاركة والرسوم
+          </a>
+          <a href="themes.html" style="display:flex;align-items:center;gap:.7rem;color:var(--muted);text-decoration:none;font-size:.85rem;padding:.5rem;border-radius:8px;transition:all .2s;" onmouseover="this.style.color='var(--sky)';this.style.background='rgba(66,165,245,.08)'" onmouseout="this.style.color='var(--muted)';this.style.background='transparent'">
+            🔬 محاور المؤتمر الخمسة
+          </a>
+          <a href="dates.html" style="display:flex;align-items:center;gap:.7rem;color:var(--muted);text-decoration:none;font-size:.85rem;padding:.5rem;border-radius:8px;transition:all .2s;" onmouseover="this.style.color='var(--sky)';this.style.background='rgba(66,165,245,.08)'" onmouseout="this.style.color='var(--muted)';this.style.background='transparent'">
+            📅 الجدول الزمني والمواعيد
+          </a>
+          <a href="https://edas.info" target="_blank" style="display:flex;align-items:center;gap:.7rem;color:var(--muted);text-decoration:none;font-size:.85rem;padding:.5rem;border-radius:8px;transition:all .2s;" onmouseover="this.style.color='var(--sky)';this.style.background='rgba(66,165,245,.08)'" onmouseout="this.style.color='var(--muted)';this.style.background='transparent'">
+            🚀 تقديم البحث عبر EDAS
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <div class="form-title">أرسل استفسارك</div>
+      <div class="form-sub">سيتم الرد على استفساركم في أقرب وقت ممكن</div>
+
+      <div class="form-group">
+        <label>الاسم الكامل *</label>
+        <input type="text" placeholder="أدخل اسمك الكامل">
+      </div>
+      <div class="form-group">
+        <label>البريد الإلكتروني *</label>
+        <input type="email" placeholder="example@email.com">
+      </div>
+      <div class="form-group">
+        <label>الجهة / المؤسسة</label>
+        <input type="text" placeholder="اسم الجامعة أو المؤسسة">
+      </div>
+      <div class="form-group">
+        <label>موضوع الاستفسار</label>
+        <select>
+          <option value="">اختر موضوع الاستفسار</option>
+          <option>استفسار عن تقديم البحث</option>
+          <option>استفسار عن الرسوم</option>
+          <option>استفسار عن المواعيد</option>
+          <option>استفسار عن التسجيل</option>
+          <option>استفسار عن النشر في المجلة</option>
+          <option>أخرى</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>رسالتك *</label>
+        <textarea placeholder="اكتب استفسارك أو ملاحظتك هنا..."></textarea>
+      </div>
+
+      <button onclick="handleSubmit()" class="btn btn-primary" style="width:100%;border-radius:12px;font-size:1rem;">
+        إرسال الرسالة ←
+      </button>
+      <div class="form-note">
+        ⚠️ ملاحظة: هذا النموذج للاستفسارات العامة. لتقديم البحوث يجب استخدام منصة <a href="https://edas.info" target="_blank" style="color:var(--sky);">EDAS</a> حصراً.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA EDAS -->
+<div class="bg-alt" style="padding:4rem 2rem;text-align:center;">
+  <div style="font-size:2.5rem;margin-bottom:1rem;">🚀</div>
+  <h2 style="font-size:1.5rem;font-weight:800;color:#fff;margin-bottom:.8rem;">جاهز لتقديم بحثك؟</h2>
+  <p style="color:var(--muted);margin-bottom:2rem;max-width:500px;margin-left:auto;margin-right:auto;">قدّم بحثك الآن عبر منصة EDAS قبل انتهاء الموعد النهائي ١ أغسطس ٢٠٢٦</p>
+  <a href="https://edas.info" target="_blank" class="btn btn-primary">الانتقال إلى EDAS ←</a>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo"><img src="assets/logo.png" alt="ISMB"></div>
+    <div class="footer-name">الجمعية العراقية لعلم الأحياء المجهرية</div>
+    <div class="footer-name-en">Iraqi Society for Microbiology (ISMB) — المؤتمر العلمي الأول ٢٠٢٦</div>
+    <div class="footer-divider"></div>
+    <ul class="footer-links">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="about.html">عن المؤتمر</a></li>
+      <li><a href="themes.html">المحاور</a></li>
+      <li><a href="dates.html">المواعيد</a></li>
+      <li><a href="participation.html">المشاركة</a></li>
+      <li><a href="contact.html">التواصل</a></li>
+    </ul>
+    <div class="footer-copy">© الجمعية العراقية لعلم الأحياء المجهرية — ISMB 2026 — جميع الحقوق محفوظة</div>
+  </div>
+</footer>
+
+<script>
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+function handleSubmit(){
+  alert('شكراً! تم استلام رسالتك. سنتواصل معك قريباً.\n\nNote: To add real form submission, connect a backend service like Formspree or EmailJS.');
+}
+</script>
+</body>
+</html>

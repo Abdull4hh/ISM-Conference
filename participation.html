@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دليل المشاركة — ISMB 2026</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.steps-flow{display:flex;gap:0;overflow-x:auto;padding-bottom:1rem;max-width:900px;margin:0 auto 3rem;}
+.step{
+  flex:1;min-width:150px;text-align:center;position:relative;padding:.5rem;
+}
+.step:not(:last-child)::after{
+  content:'←';position:absolute;
+  left:-12px;top:24px;
+  color:var(--sky2);font-size:1.2rem;
+}
+.step-circle{
+  width:50px;height:50px;border-radius:50%;
+  background:linear-gradient(135deg,var(--blue),var(--cyan));
+  display:flex;align-items:center;justify-content:center;
+  font-weight:900;font-size:1.1rem;margin:0 auto .7rem;
+  box-shadow:0 0 20px rgba(66,165,245,.3);
+}
+.step-title{font-size:.82rem;font-weight:700;color:#fff;margin-bottom:.2rem;}
+.step-sub{font-size:.72rem;color:var(--muted);}
+
+.info-box{
+  background:rgba(11,30,56,.6);border:1px solid var(--border);
+  border-radius:14px;padding:1.5rem;margin-bottom:1rem;
+  display:flex;gap:1rem;align-items:flex-start;
+}
+.info-icon{font-size:1.5rem;flex-shrink:0;}
+.info-title{font-size:.92rem;font-weight:700;color:#fff;margin-bottom:.3rem;}
+.info-desc{font-size:.83rem;color:var(--muted);line-height:1.7;}
+
+.fee-big{
+  background:rgba(11,30,56,.7);border:2px solid rgba(249,168,37,.25);
+  border-radius:20px;padding:2.5rem;text-align:center;
+  transition:all .3s;
+}
+.fee-big:hover{border-color:var(--gold);transform:translateY(-4px);}
+.fee-big .fee-icon{font-size:3rem;margin-bottom:1rem;}
+.fee-big .fee-title{font-size:.95rem;color:var(--muted);margin-bottom:.4rem;line-height:1.7;}
+.fee-big .fee-amt{font-size:2.5rem;font-weight:900;color:var(--gold);}
+.fee-big .fee-cur{font-size:.8rem;color:var(--muted);margin-top:.2rem;}
+.fee-big .fee-note{font-size:.75rem;color:var(--sky2);margin-top:.8rem;line-height:1.5;}
+
+.pub-card{
+  background:linear-gradient(135deg,rgba(21,101,192,.15),rgba(0,188,212,.1));
+  border:1px solid rgba(66,165,245,.25);
+  border-radius:20px;padding:2.5rem;max-width:700px;margin:0 auto;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">
+    <img src="assets/logo.png" alt="ISMB">
+    <div class="nav-brand-text">
+      <div class="t1">الجمعية العراقية لعلم الأحياء المجهرية</div>
+      <div class="t2">Iraqi Society for Microbiology — ISMB</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">الرئيسية</a></li>
+    <li><a href="about.html">عن المؤتمر</a></li>
+    <li><a href="themes.html">المحاور</a></li>
+    <li><a href="dates.html">المواعيد</a></li>
+    <li><a href="participation.html" class="active">المشاركة</a></li>
+    <li><a href="contact.html">التواصل</a></li>
+    <li><a href="https://edas.info" target="_blank" class="nav-cta">تقديم البحث ←</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="index.html">🏠 الرئيسية</a></li>
+    <li><a href="about.html">🔬 عن المؤتمر</a></li>
+    <li><a href="themes.html">📋 المحاور</a></li>
+    <li><a href="dates.html">📅 المواعيد</a></li>
+    <li><a href="participation.html">📝 المشاركة</a></li>
+    <li><a href="contact.html">✉️ التواصل</a></li>
+    <li><a href="https://edas.info" target="_blank">🚀 تقديم البحث عبر EDAS</a></li>
+  </ul>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-badge">PARTICIPATION GUIDE</div>
+  <h1>دليل <span>المشاركة</span></h1>
+  <p>كل ما تحتاجه للمشاركة في المؤتمر العلمي الأول</p>
+</div>
+
+<!-- STEPS -->
+<div style="padding:5rem 2rem;max-width:1200px;margin:0 auto;">
+  <div class="section-label">HOW TO PARTICIPATE</div>
+  <h2 class="section-title">خطوات <span>المشاركة</span></h2>
+  <div class="section-line"></div>
+
+  <div class="steps-flow">
+    <div class="step">
+      <div class="step-circle">١</div>
+      <div class="step-title">التسجيل</div>
+      <div class="step-sub">زيارة الموقع الرسمي وإنشاء حساب</div>
+    </div>
+    <div class="step">
+      <div class="step-circle">٢</div>
+      <div class="step-title">إعداد البحث</div>
+      <div class="step-sub">الالتزام بتعليمات التنسيق</div>
+    </div>
+    <div class="step">
+      <div class="step-circle">٣</div>
+      <div class="step-title">رفع البحث</div>
+      <div class="step-sub">إرسال عبر منصة EDAS</div>
+    </div>
+    <div class="step">
+      <div class="step-circle">٤</div>
+      <div class="step-title">التحكيم</div>
+      <div class="step-sub">مراجعة من قبل المحكمين</div>
+    </div>
+    <div class="step">
+      <div class="step-circle" style="background:linear-gradient(135deg,#F9A825,#FF8F00);">٥</div>
+      <div class="step-title">القبول والنشر</div>
+      <div class="step-sub">إشعار القبول وسداد الرسوم</div>
+    </div>
+  </div>
+
+  <!-- Step details -->
+  <div style="max-width:800px;margin:0 auto;">
+    <div class="info-box">
+      <div class="info-icon">1️⃣</div>
+      <div>
+        <div class="info-title">التسجيل على منصة EDAS</div>
+        <div class="info-desc">أنشئ حساباً مجانياً على منصة EDAS (<a href="https://edas.info" target="_blank" style="color:var(--sky);">edas.info</a>) إذا لم يكن لديك حساب مسبق. يجب إتمام التسجيل قبل تقديم البحث.</div>
+      </div>
+    </div>
+    <div class="info-box">
+      <div class="info-icon">2️⃣</div>
+      <div>
+        <div class="info-title">إعداد البحث وفق تعليمات المجلة</div>
+        <div class="info-desc">يجب أن يلتزم البحث بتعليمات التنسيق المحددة من قبل مجلة Iraqi Journals of Bioscience &amp; Biomedical. تأكد من مراجعة إرشادات الكتابة قبل التقديم.</div>
+      </div>
+    </div>
+    <div class="info-box">
+      <div class="info-icon">3️⃣</div>
+      <div>
+        <div class="info-title">رفع البحث عبر منصة EDAS</div>
+        <div class="info-desc">يُرسل البحث إلكترونياً عبر منصة EDAS فقط. لا تُقبل الأبحاث عبر البريد الإلكتروني أو أي وسيلة أخرى. آخر موعد للتقديم: ١ أغسطس ٢٠٢٦.</div>
+      </div>
+    </div>
+    <div class="info-box">
+      <div class="info-icon">4️⃣</div>
+      <div>
+        <div class="info-title">مرحلة التحكيم العلمي</div>
+        <div class="info-desc">تخضع جميع الأبحاث لإجراءات التحكيم العلمي من قبل محكمين متخصصين. تستغرق هذه المرحلة عدة أسابيع ويُبلَّغ الباحث بالنتيجة بتاريخ ١ سبتمبر ٢٠٢٦.</div>
+      </div>
+    </div>
+    <div class="info-box" style="border-color:rgba(249,168,37,.25);">
+      <div class="info-icon">5️⃣</div>
+      <div>
+        <div class="info-title">إشعار القبول وسداد الرسوم</div>
+        <div class="info-desc">بعد إشعار القبول، يتعين على الباحث سداد رسوم النشر والمشاركة، والتأكد من اتباع التعليمات النهائية للنشر في المجلة.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FEES -->
+<div class="bg-alt" style="padding:5rem 2rem;">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="section-label">FEES & COSTS</div>
+    <h2 class="section-title">الرسوم <span>المالية</span></h2>
+    <div class="section-line"></div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;max-width:800px;margin:0 auto 3rem;">
+      <div class="fee-big">
+        <div class="fee-icon">📄</div>
+        <div class="fee-title">أجور النشر في المجلة</div>
+        <div class="fee-amt">١٤٠,٠٠٠</div>
+        <div class="fee-cur">دينار عراقي</div>
+        <div class="fee-note">
+          ✅ تشمل: الاستلال الإلكتروني (Plagiarism Check)<br>
+          ✅ تشمل: التدقيق اللغوي<br>
+          ✅ تشمل: النشر في المجلة العلمية المحكّمة
+        </div>
+      </div>
+      <div class="fee-big">
+        <div class="fee-icon">🏅</div>
+        <div class="fee-title">شهادة المشاركة لكل باحث</div>
+        <div class="fee-amt">٢٥,٠٠٠</div>
+        <div class="fee-cur">دينار عراقي</div>
+        <div class="fee-note">
+          ✅ شهادة مشاركة رسمية لكل باحث<br>
+          ✅ معتمدة من الجمعية العراقية لعلم الأحياء المجهرية
+        </div>
+      </div>
+    </div>
+
+    <div style="max-width:700px;margin:0 auto;background:rgba(66,165,245,.05);border:1px solid rgba(66,165,245,.15);border-radius:12px;padding:1.2rem;font-size:.83rem;color:var(--muted);line-height:1.8;">
+      ⚠️ <strong style="color:var(--sky);">ملاحظة:</strong> تخضع البحوث لشروط المجلة وإجراءات التحكيم العلمي. الرسوم المذكورة أعلاه غير قابلة للاسترداد بعد إتمام عملية التحكيم. للاستفسار والتسجيل يرجى التواصل مع لجنة المؤتمر.
+    </div>
+  </div>
+</div>
+
+<!-- PUBLICATION -->
+<div style="padding:5rem 2rem;max-width:1200px;margin:0 auto;">
+  <div class="section-label">PUBLICATION</div>
+  <h2 class="section-title">تفاصيل <span>النشر العلمي</span></h2>
+  <div class="section-line"></div>
+
+  <div class="pub-card">
+    <div style="display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap;">
+      <div style="font-size:4rem;">📰</div>
+      <div>
+        <div style="font-size:1.2rem;font-weight:800;color:var(--sky);margin-bottom:.3rem;">Iraqi Journals of Bioscience &amp; Biomedical</div>
+        <div style="font-size:.85rem;color:var(--muted);margin-bottom:1rem;">مجلة علمية محكّمة — كلية التقنيات الأحيائية / جامعة النهرين</div>
+        <div style="display:flex;gap:.7rem;flex-wrap:wrap;">
+          <span style="background:rgba(66,165,245,.1);border:1px solid var(--border);border-radius:6px;padding:.3rem .8rem;font-size:.75rem;color:var(--sky);">✅ مجلة محكّمة</span>
+          <span style="background:rgba(66,165,245,.1);border:1px solid var(--border);border-radius:6px;padding:.3rem .8rem;font-size:.75rem;color:var(--sky);">✅ جامعة النهرين</span>
+          <span style="background:rgba(66,165,245,.1);border:1px solid var(--border);border-radius:6px;padding:.3rem .8rem;font-size:.75rem;color:var(--sky);">✅ نشر إلكتروني</span>
+        </div>
+      </div>
+    </div>
+    <div style="border-top:1px solid var(--border);margin-top:1.5rem;padding-top:1.5rem;font-size:.85rem;color:var(--muted);line-height:1.9;">
+      تُنشر البحوث المقبولة في مجلة Iraqi Journals of Bioscience &amp; Biomedical التابعة لكلية التقنيات الأحيائية — جامعة النهرين. تخضع جميع الأبحاث لإجراءات التحكيم العلمي الصارمة قبل النشر.
+    </div>
+  </div>
+
+  <div style="text-align:center;margin-top:3rem;">
+    <a href="https://edas.info" target="_blank" class="btn btn-primary" style="font-size:1.1rem;padding:1rem 3rem;">ابدأ التقديم الآن عبر EDAS ←</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo"><img src="assets/logo.png" alt="ISMB"></div>
+    <div class="footer-name">الجمعية العراقية لعلم الأحياء المجهرية</div>
+    <div class="footer-name-en">Iraqi Society for Microbiology (ISMB) — المؤتمر العلمي الأول ٢٠٢٦</div>
+    <div class="footer-divider"></div>
+    <ul class="footer-links">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="about.html">عن المؤتمر</a></li>
+      <li><a href="themes.html">المحاور</a></li>
+      <li><a href="dates.html">المواعيد</a></li>
+      <li><a href="participation.html">المشاركة</a></li>
+      <li><a href="contact.html">التواصل</a></li>
+    </ul>
+    <div class="footer-copy">© الجمعية العراقية لعلم الأحياء المجهرية — ISMB 2026 — جميع الحقوق محفوظة</div>
+  </div>
+</footer>
+<script>function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}</script>
+</body>
+</html>

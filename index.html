@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>المؤتمر العلمي الأول — الجمعية العراقية لعلم الأحياء المجهرية ISMB 2026</title>
+<meta name="description" content="المؤتمر العلمي الأول للجمعية العراقية لعلم الأحياء المجهرية — ٢١-٢٢ أكتوبر ٢٠٢٦">
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+/* ── HERO ── */
+.hero{
+  min-height:100vh;position:relative;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+  background:linear-gradient(160deg,#040e1d 0%,#071629 40%,#0a2248 70%,#071629 100%);
+}
+.hero-dec{position:absolute;inset:0;pointer-events:none;}
+.ring{position:absolute;border-radius:50%;border:1px solid rgba(66,165,245,.1);}
+.r1{width:700px;height:700px;top:-250px;right:-250px;}
+.r2{width:500px;height:500px;top:-150px;right:-150px;border-color:rgba(0,188,212,.07);}
+.r3{width:350px;height:350px;bottom:-100px;left:-100px;}
+.r4{width:220px;height:220px;top:30%;left:5%;border-color:rgba(66,165,245,.15);}
+.r5{width:600px;height:600px;bottom:-250px;left:15%;border-color:rgba(0,188,212,.06);}
+
+.dot-field{position:absolute;inset:0;}
+.dp{position:absolute;border-radius:50%;background:var(--sky);animation:pulse 5s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:.2;transform:scale(1);}50%{opacity:.5;transform:scale(1.4);}}
+
+.hero-content{
+  position:relative;z-index:2;
+  max-width:900px;width:100%;
+  padding:110px 2rem 4rem;
+  text-align:center;
+}
+
+.h-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(66,165,245,.1);border:1px solid rgba(66,165,245,.3);
+  padding:.35rem 1.3rem;border-radius:50px;
+  font-size:.82rem;color:var(--sky);margin-bottom:1.5rem;
+  animation:fadeUp .8s ease both;
+}
+.h-logo{
+  width:110px;height:110px;margin:0 auto 1.2rem;
+  border-radius:50%;background:#fff;padding:7px;
+  box-shadow:0 0 50px rgba(66,165,245,.35),0 0 100px rgba(66,165,245,.15);
+  animation:fadeUp .8s ease .1s both;
+}
+.h-org{font-size:1rem;color:var(--sky2);font-weight:500;margin-bottom:.3rem;animation:fadeUp .8s ease .2s both;}
+.h-conf{font-size:.8rem;color:var(--muted);margin-bottom:1.5rem;animation:fadeUp .8s ease .25s both;}
+
+.h-slogan{
+  font-size:clamp(1.6rem,3.5vw,2.6rem);font-weight:900;
+  color:#fff;line-height:1.35;margin-bottom:.6rem;
+  animation:fadeUp .8s ease .3s both;
+}
+.h-slogan span{color:var(--sky);}
+.h-slogan-en{font-size:.88rem;color:var(--muted);font-style:italic;margin-bottom:2rem;animation:fadeUp .8s ease .35s both;}
+
+.h-date{
+  display:inline-flex;align-items:center;gap:10px;
+  background:rgba(249,168,37,.12);border:1px solid rgba(249,168,37,.35);
+  padding:.65rem 2rem;border-radius:50px;
+  font-size:1.1rem;font-weight:700;color:var(--gold);
+  margin-bottom:2.5rem;animation:fadeUp .8s ease .4s both;
+}
+
+/* Countdown */
+.countdown{display:flex;justify-content:center;gap:1.2rem;margin-bottom:2.5rem;animation:fadeUp .8s ease .45s both;flex-wrap:wrap;}
+.cd-box{
+  background:rgba(11,30,56,.8);border:1px solid rgba(66,165,245,.25);
+  border-radius:14px;padding:1rem 1.4rem;min-width:75px;text-align:center;
+}
+.cd-num{font-size:2rem;font-weight:900;color:var(--sky);display:block;line-height:1;}
+.cd-lbl{font-size:.68rem;color:var(--muted);display:block;margin-top:4px;}
+.cd-sep{display:flex;align-items:center;color:var(--sky);font-size:1.5rem;font-weight:300;margin-top:-.3rem;}
+
+.h-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;animation:fadeUp .8s ease .5s both;}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+
+/* ── STATS STRIP ── */
+.stats-strip{
+  background:rgba(11,30,56,.5);
+  border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+  padding:2.5rem 2rem;
+}
+.stats-inner{
+  max-width:900px;margin:0 auto;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:2rem;text-align:center;
+}
+.st-num{font-size:2.2rem;font-weight:900;color:var(--sky);display:block;}
+.st-lbl{font-size:.8rem;color:var(--muted);}
+
+/* ── THEMES ── */
+.theme-card{
+  background:rgba(11,30,56,.6);border:1px solid var(--border);
+  border-radius:16px;padding:1.8rem;
+  transition:all .3s;position:relative;overflow:hidden;
+}
+.theme-card::before{
+  content:'';position:absolute;top:0;right:0;width:4px;height:100%;
+  background:linear-gradient(180deg,var(--blue),var(--cyan));
+}
+.theme-card:hover{transform:translateY(-5px);border-color:rgba(66,165,245,.4);box-shadow:0 10px 30px rgba(21,101,192,.15);}
+.th-num{
+  width:38px;height:38px;
+  background:linear-gradient(135deg,var(--blue),var(--cyan));
+  border-radius:9px;display:flex;align-items:center;justify-content:center;
+  font-weight:900;font-size:1rem;margin-bottom:.9rem;
+}
+.th-ar{font-size:1rem;font-weight:700;color:#fff;margin-bottom:.25rem;}
+.th-en{font-size:.75rem;color:var(--sky2);margin-bottom:.7rem;}
+.th-desc{font-size:.82rem;color:var(--muted);line-height:1.75;}
+
+/* ── DATES TIMELINE ── */
+.timeline{max-width:680px;margin:0 auto;position:relative;}
+.timeline::before{
+  content:'';position:absolute;
+  right:22px;top:10px;bottom:10px;width:2px;
+  background:linear-gradient(180deg,var(--blue),var(--cyan),var(--blue));
+}
+.tl-item{display:flex;gap:2rem;margin-bottom:2.5rem;padding-right:62px;position:relative;}
+.tl-dot{
+  position:absolute;right:14px;top:6px;
+  width:18px;height:18px;border-radius:50%;
+  border:3px solid var(--navy);
+  box-shadow:0 0 12px rgba(66,165,245,.5);
+}
+.tl-date{min-width:170px;font-size:.95rem;font-weight:700;color:var(--gold);padding-top:2px;}
+.tl-text .tl-title{font-size:1rem;font-weight:700;color:#fff;margin-bottom:.2rem;}
+.tl-text .tl-sub{font-size:.77rem;color:var(--muted);}
+
+/* ── FEES ── */
+.fee-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem;max-width:740px;margin:0 auto 2rem;}
+.fee-card{
+  background:rgba(11,30,56,.6);border:1px solid var(--border);
+  border-radius:16px;padding:2rem;text-align:center;transition:all .3s;
+}
+.fee-card:hover{transform:translateY(-4px);border-color:var(--gold);}
+.fee-icon{font-size:2.5rem;margin-bottom:.8rem;}
+.fee-title{font-size:.85rem;color:var(--muted);margin-bottom:.6rem;line-height:1.6;}
+.fee-amt{font-size:1.9rem;font-weight:900;color:var(--gold);}
+.fee-cur{font-size:.75rem;color:var(--muted);}
+
+/* ── CTA ── */
+.cta-box{
+  background:linear-gradient(135deg,rgba(21,101,192,.15),rgba(0,188,212,.1));
+  border:1px solid rgba(66,165,245,.2);
+  border-radius:24px;padding:4rem 2rem;text-align:center;
+  max-width:860px;margin:0 auto;
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-brand">
+    <img src="assets/logo.png" alt="ISMB">
+    <div class="nav-brand-text">
+      <div class="t1">الجمعية العراقية لعلم الأحياء المجهرية</div>
+      <div class="t2">Iraqi Society for Microbiology — ISMB</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">الرئيسية</a></li>
+    <li><a href="about.html">عن المؤتمر</a></li>
+    <li><a href="themes.html">المحاور</a></li>
+    <li><a href="dates.html">المواعيد</a></li>
+    <li><a href="participation.html">المشاركة</a></li>
+    <li><a href="contact.html">التواصل</a></li>
+    <li><a href="https://edas.info" target="_blank" class="nav-cta">تقديم البحث ←</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="index.html">🏠 الرئيسية</a></li>
+    <li><a href="about.html">🔬 عن المؤتمر</a></li>
+    <li><a href="themes.html">📋 المحاور</a></li>
+    <li><a href="dates.html">📅 المواعيد</a></li>
+    <li><a href="participation.html">📝 المشاركة</a></li>
+    <li><a href="contact.html">✉️ التواصل</a></li>
+    <li><a href="https://edas.info" target="_blank">🚀 تقديم البحث عبر EDAS</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-dec">
+    <div class="ring r1"></div><div class="ring r2"></div>
+    <div class="ring r3"></div><div class="ring r4"></div><div class="ring r5"></div>
+    <div class="dot-field">
+      <div class="dp" style="width:7px;height:7px;top:22%;left:12%;animation-delay:0s;"></div>
+      <div class="dp" style="width:4px;height:4px;top:55%;left:22%;animation-delay:1.5s;"></div>
+      <div class="dp" style="width:6px;height:6px;top:28%;left:75%;animation-delay:2.5s;"></div>
+      <div class="dp" style="width:5px;height:5px;top:68%;left:82%;animation-delay:.8s;"></div>
+      <div class="dp" style="width:8px;height:8px;top:45%;left:5%;animation-delay:3.5s;"></div>
+      <div class="dp" style="width:4px;height:4px;top:15%;left:55%;animation-delay:2s;"></div>
+      <div class="dp" style="width:6px;height:6px;top:80%;left:45%;animation-delay:1s;"></div>
+    </div>
+  </div>
+
+  <div class="hero-content">
+    <div class="h-badge">✦ المؤتمر العلمي الأول ✦</div>
+    <img src="assets/logo.png" alt="ISMB Logo" class="h-logo">
+    <div class="h-org">الجمعية العراقية لعلم الأحياء المجهرية</div>
+    <div class="h-conf">IRAQI SOCIETY FOR MICROBIOLOGY — ISMB</div>
+
+    <h1 class="h-slogan">
+      الاتجاهات الحديثة في علم <span>الأحياء المجهرية</span><br>
+      ودورها في مواجهة تحديات الصحة العامة
+    </h1>
+    <div class="h-slogan-en">Modern Trends in Microbiology and Its Role in Addressing Public Health Challenges</div>
+
+    <div class="h-date">📅 &nbsp; ٢١ – ٢٢ تشرين الأول / أكتوبر ٢٠٢٦</div>
+
+    <div class="countdown">
+      <div class="cd-box"><span class="cd-num" id="d">--</span><span class="cd-lbl">يوم</span></div>
+      <div class="cd-sep">:</div>
+      <div class="cd-box"><span class="cd-num" id="h">--</span><span class="cd-lbl">ساعة</span></div>
+      <div class="cd-sep">:</div>
+      <div class="cd-box"><span class="cd-num" id="m">--</span><span class="cd-lbl">دقيقة</span></div>
+      <div class="cd-sep">:</div>
+      <div class="cd-box"><span class="cd-num" id="s">--</span><span class="cd-lbl">ثانية</span></div>
+    </div>
+
+    <div class="h-btns">
+      <a href="participation.html" class="btn btn-primary">سجّل الآن</a>
+      <a href="about.html" class="btn btn-secondary">تعرّف على المؤتمر</a>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-strip">
+  <div class="stats-inner">
+    <div><span class="st-num">٥</span><span class="st-lbl">محاور علمية</span></div>
+    <div><span class="st-num">٢</span><span class="st-lbl">يومَي مؤتمر</span></div>
+    <div><span class="st-num">٢١</span><span class="st-lbl">أكتوبر ٢٠٢٦</span></div>
+    <div><span class="st-num">EDAS</span><span class="st-lbl">منصة التقديم</span></div>
+    <div><span class="st-num">IQD</span><span class="st-lbl">النشر الدولي</span></div>
+  </div>
+</div>
+
+<!-- THEMES -->
+<div class="section" style="max-width:1200px;margin:0 auto;padding:5rem 2rem;">
+  <div class="section-label">CONFERENCE THEMES</div>
+  <h2 class="section-title">محاور <span>المؤتمر</span></h2>
+  <div class="section-line"></div>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;">
+    <div class="theme-card">
+      <div class="th-num">١</div>
+      <div class="th-ar">الأحياء المجهرية الطبية والأمراض المعدية</div>
+      <div class="th-en">Medical Microbiology and Infectious Diseases</div>
+      <div class="th-desc">الدراسات المتعلقة بالبكتيريا والفيروسات والفطريات والطفيليات المسببة للأمراض المعدية، وآليات العدوى والانتشار الوبائي، وأساليب المكافحة الحديثة.</div>
+    </div>
+    <div class="theme-card">
+      <div class="th-num">٢</div>
+      <div class="th-ar">مقاومة المضادات المايكروبية والتقنيات الجزيئية</div>
+      <div class="th-en">AMR & Molecular Diagnostic Techniques</div>
+      <div class="th-desc">ظاهرة AMR وآليات المقاومة، وتطبيقات PCR وتسلسل الجيل الثالث والتقنيات الجزيئية في التشخيص المختبري الدقيق.</div>
+    </div>
+    <div class="theme-card">
+      <div class="th-num">٣</div>
+      <div class="th-ar">الاستجابة المناعية للعدوى الميكروبية</div>
+      <div class="th-en">Immune Response to Microbial Infections</div>
+      <div class="th-desc">آليات الاستجابة المناعية الفطرية والتكيفية، وتطبيقاتها في التشخيص المصلي وتطوير اللقاحات والبروتوكولات العلاجية.</div>
+    </div>
+    <div class="theme-card">
+      <div class="th-num">٤</div>
+      <div class="th-ar">المعززات الحيوية ودورها في الصحة</div>
+      <div class="th-en">Probiotics & Bioenhancers in Public Health</div>
+      <div class="th-desc">دور البروبيوتيك والمعززات الحيوية في تعزيز صحة الإنسان والحيوان، وتطبيقاتها في الصناعات الغذائية والدوائية والزراعية.</div>
+    </div>
+    <div class="theme-card">
+      <div class="th-num">٥</div>
+      <div class="th-ar">الأحياء المجهرية التطبيقية والبيئية</div>
+      <div class="th-en">Applied & Environmental Microbiology</div>
+      <div class="th-desc">التطبيقات البيئية والصناعية والزراعية لعلم الأحياء المجهرية، بما يشمل معالجة التلوث والإنتاج الحيوي والتخمير.</div>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:2rem;">
+    <a href="themes.html" class="btn btn-secondary">عرض تفاصيل المحاور كاملة</a>
+  </div>
+</div>
+
+<!-- DATES -->
+<div class="bg-alt" style="padding:5rem 2rem;">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="section-label">IMPORTANT DATES</div>
+    <h2 class="section-title">المواعيد <span>المهمة</span></h2>
+    <div class="section-line"></div>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot" style="background:var(--sky);"></div>
+        <div class="tl-date">١ يونيو ٢٠٢٦</div>
+        <div class="tl-text">
+          <div class="tl-title">بدء استلام البحوث</div>
+          <div class="tl-sub">Opening of Research Submission</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot" style="background:var(--gold);"></div>
+        <div class="tl-date">١ أغسطس ٢٠٢٦</div>
+        <div class="tl-text">
+          <div class="tl-title">آخر موعد لاستلام البحوث</div>
+          <div class="tl-sub">Submission Deadline</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot" style="background:var(--cyan);"></div>
+        <div class="tl-date">١ سبتمبر ٢٠٢٦</div>
+        <div class="tl-text">
+          <div class="tl-title">إشعار القبول للباحثين</div>
+          <div class="tl-sub">Acceptance Notification</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot" style="background:var(--gold);box-shadow:0 0 16px rgba(249,168,37,.6);"></div>
+        <div class="tl-date" style="color:var(--sky);font-size:1rem;">٢١–٢٢ أكتوبر ٢٠٢٦</div>
+        <div class="tl-text">
+          <div class="tl-title" style="color:var(--sky);font-size:1.1rem;">🎓 انعقاد المؤتمر العلمي الأول</div>
+          <div class="tl-sub">The First Scientific Conference — 21–22 October 2026</div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:2rem;">
+      <a href="dates.html" class="btn btn-secondary">عرض كامل المواعيد</a>
+    </div>
+  </div>
+</div>
+
+<!-- FEES QUICK -->
+<div style="padding:5rem 2rem;max-width:1200px;margin:0 auto;">
+  <div class="section-label">PARTICIPATION FEES</div>
+  <h2 class="section-title">الرسوم <span>والنشر</span></h2>
+  <div class="section-line"></div>
+
+  <div class="fee-grid">
+    <div class="fee-card">
+      <div class="fee-icon">📄</div>
+      <div class="fee-title">أجور النشر في المجلة<br><small>(تشمل الاستلال الإلكتروني والتدقيق اللغوي)</small></div>
+      <div class="fee-amt">١٤٠,٠٠٠</div>
+      <div class="fee-cur">دينار عراقي</div>
+    </div>
+    <div class="fee-card">
+      <div class="fee-icon">🏅</div>
+      <div class="fee-title">شهادة المشاركة<br><small>لكل باحث مشارك في المؤتمر</small></div>
+      <div class="fee-amt">٢٥,٠٠٠</div>
+      <div class="fee-cur">دينار عراقي</div>
+    </div>
+  </div>
+
+  <div style="text-align:center;color:var(--muted);font-size:.88rem;margin-bottom:2rem;">
+    <span style="color:var(--sky);">📰 تُنشر البحوث في:</span> Iraqi Journals of Bioscience &amp; Biomedical — كلية التقنيات الأحيائية / جامعة النهرين
+  </div>
+
+  <div style="text-align:center;">
+    <a href="participation.html" class="btn btn-primary">دليل المشاركة الكامل</a>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="bg-alt" style="padding:5rem 2rem;">
+  <div class="cta-box">
+    <div style="font-size:3rem;margin-bottom:1rem;">🔬🧬🦠</div>
+    <h2 style="font-size:1.7rem;font-weight:800;margin-bottom:1rem;">نرحب بمشاركتكم في هذا الحدث العلمي المتميز</h2>
+    <p style="color:var(--muted);max-width:580px;margin:0 auto 2rem;line-height:1.85;font-size:.95rem;">
+      يسعد الجمعية العراقية لعلم الأحياء المجهرية دعوة جميع الباحثين والأكاديميين والمتخصصين في مجال الأحياء المجهرية وعلوم الصحة للمشاركة في المؤتمر العلمي الأول
+    </p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="https://edas.info" target="_blank" class="btn btn-primary">تقديم البحث عبر EDAS ←</a>
+      <a href="participation.html" class="btn btn-secondary">دليل المشاركة</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <img src="assets/logo.png" alt="ISMB">
+    </div>
+    <div class="footer-name">الجمعية العراقية لعلم الأحياء المجهرية</div>
+    <div class="footer-name-en">Iraqi Society for Microbiology (ISMB) — المؤتمر العلمي الأول ٢٠٢٦</div>
+    <div class="footer-divider"></div>
+    <ul class="footer-links">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="about.html">عن المؤتمر</a></li>
+      <li><a href="themes.html">المحاور</a></li>
+      <li><a href="dates.html">المواعيد</a></li>
+      <li><a href="participation.html">المشاركة</a></li>
+      <li><a href="contact.html">التواصل</a></li>
+      <li><a href="https://edas.info" target="_blank">EDAS</a></li>
+    </ul>
+    <div class="footer-copy">© الجمعية العراقية لعلم الأحياء المجهرية — ISMB 2026 — جميع الحقوق محفوظة</div>
+  </div>
+</footer>
+
+<script>
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+function tick(){
+  const t=new Date('2026-10-21T08:00:00')-new Date();
+  if(t<=0){document.querySelector('.countdown').innerHTML='<div style="color:var(--gold);font-size:1.4rem;font-weight:700;padding:1rem">🎉 انطلق المؤتمر!</div>';return;}
+  const pad=n=>String(Math.floor(n)).padStart(2,'0');
+  document.getElementById('d').textContent=pad(t/864e5);
+  document.getElementById('h').textContent=pad((t%864e5)/36e5);
+  document.getElementById('m').textContent=pad((t%36e5)/6e4);
+  document.getElementById('s').textContent=pad((t%6e4)/1e3);
+}
+tick();setInterval(tick,1000);
+</script>
+</body>
+</html>
