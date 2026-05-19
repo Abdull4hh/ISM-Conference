@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>الرئيسية — المؤتمر العلمي الأول للجمعية العراقية لعلم الأحياء المجهرية</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.hero{min-height:100vh;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;background:linear-gradient(160deg,#030b18 0%,#060f20 40%,#091a38 80%,#0c2040 100%);}
+.hr{position:absolute;border-radius:50%;border:1px solid rgba(30,136,229,.07);}
+.hr1{width:700px;height:700px;top:-280px;right:-280px;}
+.hr2{width:480px;height:480px;top:-170px;right:-170px;border-color:rgba(0,131,143,.05);}
+.hr3{width:340px;height:340px;bottom:-130px;left:-130px;}
+.hr4{width:170px;height:170px;top:28%;left:4%;}
+.dp{position:absolute;border-radius:50%;background:#1e88e5;animation:dp 6s ease-in-out infinite;}
+@keyframes dp{0%,100%{opacity:.12;transform:scale(1);}50%{opacity:.35;transform:scale(1.6);}}
+@keyframes fu{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:translateY(0);}}
+.hc{position:relative;z-index:2;max-width:860px;width:100%;padding:106px 2rem 4rem;text-align:center;}
+.hbadge{display:inline-block;background:rgba(30,136,229,.11);border:1px solid rgba(30,136,229,.26);padding:.3rem 1.2rem;border-radius:50px;font-size:.78rem;color:#90CAF9;margin-bottom:1.3rem;animation:fu .7s ease both;letter-spacing:1px;}
+.hlogo{width:105px;height:105px;margin:0 auto 1.1rem;border-radius:50%;background:#fff;padding:6px;box-shadow:0 0 50px rgba(30,136,229,.28),0 0 100px rgba(30,136,229,.1);animation:fu .7s ease .1s both;border:3px solid rgba(255,255,255,.9);}
+.horg{font-size:.95rem;color:#90CAF9;font-weight:700;margin-bottom:.2rem;animation:fu .7s ease .18s both;}
+.horg2{font-size:.67rem;color:rgba(144,202,249,.5);letter-spacing:1.5px;margin-bottom:1.3rem;animation:fu .7s ease .22s both;text-transform:uppercase;}
+.hslogan{font-size:clamp(1.55rem,3.2vw,2.5rem);font-weight:900;color:#fff;line-height:1.35;margin-bottom:.55rem;animation:fu .7s ease .28s both;}
+.hslogan em{color:#42A5F5;font-style:normal;}
+.hslogen{font-size:.84rem;color:rgba(144,202,249,.6);font-style:italic;margin-bottom:1.8rem;animation:fu .7s ease .33s both;}
+.hdate{display:inline-flex;align-items:center;gap:9px;background:rgba(191,54,12,.12);border:1px solid rgba(191,54,12,.28);padding:.58rem 1.8rem;border-radius:50px;font-size:.98rem;font-weight:700;color:#ff8a65;margin-bottom:2.2rem;animation:fu .7s ease .38s both;}
+.cds{display:flex;justify-content:center;gap:1rem;margin-bottom:2.3rem;animation:fu .7s ease .42s both;flex-wrap:wrap;}
+.cb{background:rgba(255,255,255,.055);border:1px solid rgba(30,136,229,.18);border-radius:14px;padding:.9rem 1.3rem;min-width:72px;text-align:center;backdrop-filter:blur(10px);}
+.cn{font-size:1.9rem;font-weight:900;color:#42A5F5;display:block;line-height:1;}
+.cl{font-size:.63rem;color:rgba(144,202,249,.6);display:block;margin-top:3px;}
+.csep{display:flex;align-items:center;color:rgba(144,202,249,.35);font-size:1.3rem;padding-top:2px;}
+.hbtns{display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap;animation:fu .7s ease .48s both;}
+.btn-ghost{background:rgba(255,255,255,.07);color:#90CAF9;padding:.78rem 1.9rem;border-radius:50px;border:1.5px solid rgba(144,202,249,.25);text-decoration:none;font-weight:700;font-size:.88rem;transition:all .28s;font-family:'Tajawal',sans-serif;display:inline-block;}
+.btn-ghost:hover{background:rgba(255,255,255,.13);border-color:#90CAF9;}
+.stats-bar{background:linear-gradient(90deg,var(--bg2),var(--bg3),var(--bg2));border-top:1.5px solid var(--border);border-bottom:1.5px solid var(--border);padding:2rem;}
+.stats-inner{max-width:820px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1.5rem;text-align:center;}
+.sn{font-size:1.9rem;font-weight:900;color:var(--blue);display:block;line-height:1;}
+.sl{font-size:.74rem;color:var(--muted);margin-top:.2rem;font-weight:500;}
+.themes-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));gap:1.3rem;}
+.dates-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1rem;max-width:900px;margin:0 auto;}
+.date-box{background:var(--card);border:1.5px solid var(--border);border-radius:16px;padding:1.5rem;text-align:center;box-shadow:var(--shadow);transition:all .26s;}
+.date-box:hover{transform:translateY(-3px);box-shadow:var(--shadow-h);}
+.fee-box{background:var(--card);border:1.5px solid rgba(191,54,12,.16);border-radius:18px;padding:2rem;text-align:center;box-shadow:var(--shadow);transition:all .26s;}
+.fee-box:hover{transform:translateY(-4px);border-color:var(--goldl);box-shadow:var(--shadow-h);}
+.cta-wrap{background:linear-gradient(135deg,var(--bg2),var(--bg3));border:1.5px solid var(--border2);border-radius:24px;padding:3.5rem 2rem;text-align:center;max-width:820px;margin:0 auto;}
+</style>
+</head>
+<body>
+<nav><a href="index.html" class="nav-brand"><img src="assets/logo.png" alt="ISMB"><div class="nav-brand-text"><div class="t1"><span data-lang="ar">الجمعية العراقية لعلم الأحياء المجهرية</span><span data-lang="en">Iraqi Society for Microbiology</span></div><div class="t2">ISMB 2026</div></div></a>
+  <ul class="nav-links"><li><a href="index.html" class="active"><span data-lang="ar">الرئيسية</span><span data-lang="en">Home</span></a></li><li><a href="about.html"><span data-lang="ar">عن المؤتمر</span><span data-lang="en">About</span></a></li><li><a href="speakers.html"><span data-lang="ar">المتحدثون</span><span data-lang="en">Speakers</span></a></li><li><a href="committees.html"><span data-lang="ar">اللجان</span><span data-lang="en">Committees</span></a></li><li><a href="themes.html"><span data-lang="ar">المحاور</span><span data-lang="en">Themes</span></a></li><li><a href="dates.html"><span data-lang="ar">المواعيد</span><span data-lang="en">Dates</span></a></li><li><a href="participation.html"><span data-lang="ar">المشاركة</span><span data-lang="en">Participate</span></a></li><li><a href="contact.html"><span data-lang="ar">التواصل</span><span data-lang="en">Contact</span></a></li><li><a href="https://edas.info/N35135" target="_blank" class="nav-cta"><span data-lang="ar">تقديم البحث ←</span><span data-lang="en">Submit Paper ←</span></a></li></ul>
+  <div style="display:flex;align-items:center;gap:.7rem;"><div class="lang-toggle"><button class="lbtn" data-lang-btn="ar" onclick="setLang('ar')">AR</button><button class="lbtn" data-lang-btn="en" onclick="setLang('en')">EN</button></div><div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div></div>
+</nav>
+<div class="mobile-menu" id="mM"><ul><li><a href="index.html"><span data-lang="ar">الرئيسية</span><span data-lang="en">Home</span></a></li><li><a href="about.html"><span data-lang="ar">عن المؤتمر</span><span data-lang="en">About</span></a></li><li><a href="speakers.html"><span data-lang="ar">المتحدثون</span><span data-lang="en">Speakers</span></a></li><li><a href="committees.html"><span data-lang="ar">اللجان</span><span data-lang="en">Committees</span></a></li><li><a href="themes.html"><span data-lang="ar">المحاور</span><span data-lang="en">Themes</span></a></li><li><a href="dates.html"><span data-lang="ar">المواعيد</span><span data-lang="en">Dates</span></a></li><li><a href="participation.html"><span data-lang="ar">المشاركة</span><span data-lang="en">Participate</span></a></li><li><a href="contact.html"><span data-lang="ar">التواصل</span><span data-lang="en">Contact</span></a></li><li><a href="https://edas.info/35135" target="_blank">📋 <span data-lang="ar">التسجيل</span><span data-lang="en">Registration</span></a></li><li><a href="https://edas.info/N35135" target="_blank">🚀 <span data-lang="ar">رفع البحث</span><span data-lang="en">Submit Paper</span></a></li></ul></div>
+<div class="hero">
+  <div style="position:absolute;inset:0;pointer-events:none;">
+    <div class="hr hr1"></div><div class="hr hr2"></div><div class="hr hr3"></div><div class="hr hr4"></div>
+    <div class="dp" style="width:5px;height:5px;top:20%;left:10%;animation-delay:0s;"></div>
+    <div class="dp" style="width:4px;height:4px;top:55%;left:18%;animation-delay:1.8s;"></div>
+    <div class="dp" style="width:6px;height:6px;top:28%;left:73%;animation-delay:2.8s;"></div>
+    <div class="dp" style="width:4px;height:4px;top:70%;left:82%;animation-delay:.9s;"></div>
+    <div class="dp" style="width:5px;height:5px;top:82%;left:44%;animation-delay:2.2s;"></div>
+  </div>
+  <div class="hc">
+    <div class="hbadge">✦ <span data-lang="ar">المؤتمر العلمي الأول</span><span data-lang="en">The First Scientific Conference</span> ✦</div>
+    <img src="assets/logo.png" alt="ISMB" class="hlogo">
+    <div class="horg"><span data-lang="ar">الجمعية العراقية لعلم الأحياء المجهرية</span><span data-lang="en">Iraqi Society for Microbiology</span></div>
+    <div class="horg2">IRAQI SOCIETY FOR MICROBIOLOGY — ISMB</div>
+    <h1 class="hslogan">
+      <span data-lang="ar">الاتجاهات الحديثة في علم <em>الأحياء المجهرية</em><br>ودورها في مواجهة تحديات الصحة العامة</span>
+      <span data-lang="en">Modern Trends in <em>Microbiology</em><br>and Its Role in Addressing Public Health Challenges</span>
+    </h1>
+    <div class="hslogen">
+      <span data-lang="ar">Modern Trends in Microbiology and Its Role in Addressing Public Health Challenges</span>
+      <span data-lang="en">الاتجاهات الحديثة في علم الأحياء المجهرية ودورها في مواجهة تحديات الصحة العامة</span>
+    </div>
+    <div class="hdate">📅 <span data-lang="ar">21 – 22 تشرين الأول / أكتوبر 2026</span><span data-lang="en">October 21 – 22, 2026</span></div>
+    <div class="cds">
+      <div class="cb"><span class="cn" id="cd">--</span><span class="cl"><span data-lang="ar">يوم</span><span data-lang="en">Day</span></span></div>
+      <div class="csep">:</div>
+      <div class="cb"><span class="cn" id="ch">--</span><span class="cl"><span data-lang="ar">ساعة</span><span data-lang="en">Hr</span></span></div>
+      <div class="csep">:</div>
+      <div class="cb"><span class="cn" id="cm">--</span><span class="cl"><span data-lang="ar">دقيقة</span><span data-lang="en">Min</span></span></div>
+      <div class="csep">:</div>
+      <div class="cb"><span class="cn" id="cs">--</span><span class="cl"><span data-lang="ar">ثانية</span><span data-lang="en">Sec</span></span></div>
+    </div>
+    <div class="hbtns">
+      <a href="https://edas.info/35135" target="_blank" class="btn-ghost">📋 <span data-lang="ar">التسجيل ومتابعة المؤتمر</span><span data-lang="en">Conference Registration</span></a>
+      <a href="https://edas.info/N35135" target="_blank" class="btn btn-primary">🚀 <span data-lang="ar">رفع البحث — Submit Paper</span><span data-lang="en">Submit Your Paper</span></a>
+      <a href="about.html" class="btn-ghost"><span data-lang="ar">تعرّف على المؤتمر</span><span data-lang="en">Learn More</span></a>
+    </div>
+  </div>
+</div>
+
+<div class="stats-bar"><div class="stats-inner">
+  <div><span class="sn">5</span><span class="sl"><span data-lang="ar">محاور علمية</span><span data-lang="en">Themes</span></span></div>
+  <div><span class="sn">2</span><span class="sl"><span data-lang="ar">يومَي مؤتمر</span><span data-lang="en">Days</span></span></div>
+  <div><span class="sn">21</span><span class="sl"><span data-lang="ar">أكتوبر 2026</span><span data-lang="en">October 2026</span></span></div>
+  <div><span class="sn">EDAS</span><span class="sl"><span data-lang="ar">منصة التقديم</span><span data-lang="en">Platform</span></span></div>
+  <div><span class="sn">IQD</span><span class="sl"><span data-lang="ar">نشر دولي</span><span data-lang="en">Journal</span></span></div>
+</div></div>
+
+<div class="section">
+  <div class="section-label">CONFERENCE THEMES</div>
+  <h2 class="section-title"><span data-lang="ar">محاور <em>المؤتمر</em></span><span data-lang="en">Conference <em>Themes</em></span></h2>
+  <div class="section-line"></div>
+  <div class="themes-grid"><div class="theme-card"><div class="th-num">1</div><div class="th-ar"><span data-lang="ar">الأحياء المجهرية الطبية والأمراض المعدية</span><span data-lang="en">Medical Microbiology & Infectious Diseases</span></div><div class="th-en">Medical Microbiology & Infectious Diseases</div><div class="th-desc"><span data-lang="ar">دراسات البكتيريا والفيروسات والفطريات والطفيليات المسببة للأمراض المعدية، وآليات العدوى والمكافحة الحديثة.</span><span data-lang="en">Studies on bacteria, viruses, fungi, and parasites causing infectious diseases and modern control methods.</span></div></div>
+<div class="theme-card"><div class="th-num">2</div><div class="th-ar"><span data-lang="ar">مقاومة المضادات المايكروبية والتقنيات الجزيئية</span><span data-lang="en">AMR & Molecular Diagnostic Techniques</span></div><div class="th-en">AMR & Molecular Diagnostic Techniques</div><div class="th-desc"><span data-lang="ar">ظاهرة AMR وآليات المقاومة وتطبيقات PCR والتقنيات الجزيئية الحديثة في التشخيص.</span><span data-lang="en">Antimicrobial resistance, PCR, next-gen sequencing and molecular diagnostic techniques.</span></div></div>
+<div class="theme-card"><div class="th-num">3</div><div class="th-ar"><span data-lang="ar">الاستجابة المناعية للعدوى الميكروبية</span><span data-lang="en">Immune Response to Microbial Infections</span></div><div class="th-en">Immune Response to Microbial Infections</div><div class="th-desc"><span data-lang="ar">آليات المناعة الفطرية والتكيفية وتطبيقاتها في اللقاحات والبروتوكولات العلاجية.</span><span data-lang="en">Innate and adaptive immunity and their applications in vaccines and immunotherapy protocols.</span></div></div>
+<div class="theme-card"><div class="th-num">4</div><div class="th-ar"><span data-lang="ar">المعززات الحيوية ودورها في الصحة</span><span data-lang="en">Probiotics & Bioenhancers in Public Health</span></div><div class="th-en">Probiotics & Bioenhancers in Public Health</div><div class="th-desc"><span data-lang="ar">دور البروبيوتيك والمعززات الحيوية في الصحة والصناعات الغذائية والدوائية.</span><span data-lang="en">Role of probiotics and bioenhancers in health and food, pharmaceutical, agricultural industries.</span></div></div>
+<div class="theme-card"><div class="th-num">5</div><div class="th-ar"><span data-lang="ar">الأحياء المجهرية التطبيقية والبيئية</span><span data-lang="en">Applied & Environmental Microbiology</span></div><div class="th-en">Applied & Environmental Microbiology</div><div class="th-desc"><span data-lang="ar">التطبيقات البيئية والصناعية والزراعية لعلم الأحياء المجهرية والإنتاج الحيوي.</span><span data-lang="en">Environmental, industrial and agricultural applications including bioremediation and fermentation.</span></div></div></div>
+  <div style="text-align:center;margin-top:2rem;">
+    <a href="themes.html" class="btn btn-secondary"><span data-lang="ar">عرض تفاصيل المحاور كاملة</span><span data-lang="en">View All Themes in Detail</span></a>
+  </div>
+</div>
+
+<div class="bg-alt" style="padding:4.5rem 2rem;"><div style="max-width:1200px;margin:0 auto;">
+  <div class="section-label">IMPORTANT DATES</div>
+  <h2 class="section-title"><span data-lang="ar">المواعيد <em>المهمة</em></span><span data-lang="en">Important <em>Dates</em></span></h2>
+  <div class="section-line"></div>
+  <div class="dates-row">
+    <div class="date-box"><div style="font-size:2rem;margin-bottom:.7rem;">📬</div><div style="font-size:.72rem;color:var(--muted);margin-bottom:.3rem;font-weight:600;text-transform:uppercase;"><span data-lang="ar">بدء استلام البحوث</span><span data-lang="en">Submission Opens</span></div><div style="font-size:1rem;font-weight:800;color:var(--blue);"><span data-lang="ar">1 يونيو 2026</span><span data-lang="en">June 1, 2026</span></div></div>
+    <div class="date-box" style="border-color:rgba(191,54,12,.2);"><div style="font-size:2rem;margin-bottom:.7rem;">⚠️</div><div style="font-size:.72rem;color:var(--muted);margin-bottom:.3rem;font-weight:600;text-transform:uppercase;"><span data-lang="ar">آخر موعد للبحوث</span><span data-lang="en">Deadline</span></div><div style="font-size:1rem;font-weight:800;color:var(--gold);"><span data-lang="ar">1 أغسطس 2026</span><span data-lang="en">August 1, 2026</span></div></div>
+    <div class="date-box"><div style="font-size:2rem;margin-bottom:.7rem;">✅</div><div style="font-size:.72rem;color:var(--muted);margin-bottom:.3rem;font-weight:600;text-transform:uppercase;"><span data-lang="ar">إشعار القبول</span><span data-lang="en">Acceptance</span></div><div style="font-size:1rem;font-weight:800;color:var(--blue);"><span data-lang="ar">1 سبتمبر 2026</span><span data-lang="en">Sept 1, 2026</span></div></div>
+    <div class="date-box" style="background:linear-gradient(135deg,var(--bg2),var(--bg3));border-color:var(--border2);"><div style="font-size:2rem;margin-bottom:.7rem;">🎓</div><div style="font-size:.72rem;color:var(--muted);margin-bottom:.3rem;font-weight:600;text-transform:uppercase;"><span data-lang="ar">انعقاد المؤتمر</span><span data-lang="en">Conference</span></div><div style="font-size:1.05rem;font-weight:800;color:var(--blue);"><span data-lang="ar">21 – 22 أكتوبر</span><span data-lang="en">Oct 21 – 22</span></div><div style="font-size:.7rem;color:var(--light-muted);">2026</div></div>
+  </div>
+  <div style="text-align:center;margin-top:2rem;"><a href="dates.html" class="btn btn-secondary"><span data-lang="ar">عرض الجدول الزمني الكامل</span><span data-lang="en">View Full Timeline</span></a></div>
+</div></div>
+
+<div class="section">
+  <div class="section-label">FEES & PUBLICATION</div>
+  <h2 class="section-title"><span data-lang="ar">الرسوم <em>والنشر</em></span><span data-lang="en">Fees & <em>Publication</em></span></h2>
+  <div class="section-line"></div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.4rem;max-width:700px;margin:0 auto 2rem;">
+    <div class="fee-box"><div style="font-size:2.4rem;margin-bottom:.8rem;">📄</div><div style="font-size:.85rem;color:var(--muted);margin-bottom:.5rem;line-height:1.7;"><span data-lang="ar">أجور النشر في المجلة<br><small>(تشمل الاستلال والتدقيق اللغوي)</small></span><span data-lang="en">Journal Publication Fee<br><small>(plagiarism check & language editing)</small></span></div><div style="font-size:1.9rem;font-weight:900;color:var(--gold);">140,000</div><div style="font-size:.73rem;color:var(--muted);"><span data-lang="ar">دينار عراقي</span><span data-lang="en">Iraqi Dinar</span></div></div>
+    <div class="fee-box"><div style="font-size:2.4rem;margin-bottom:.8rem;">🏅</div><div style="font-size:.85rem;color:var(--muted);margin-bottom:.5rem;line-height:1.7;"><span data-lang="ar">شهادة المشاركة<br><small>لكل باحث مشارك</small></span><span data-lang="en">Participation Certificate<br><small>per researcher</small></span></div><div style="font-size:1.9rem;font-weight:900;color:var(--gold);">25,000</div><div style="font-size:.73rem;color:var(--muted);"><span data-lang="ar">دينار عراقي</span><span data-lang="en">Iraqi Dinar</span></div></div>
+  </div>
+  <div style="text-align:center;color:var(--muted);font-size:.84rem;margin-bottom:2rem;">📰 <strong style="color:var(--blue);">Iraqi Journals of Bioscience &amp; Biomedical</strong> — <span data-lang="ar">جامعة النهرين</span><span data-lang="en">Al-Nahrain University</span></div>
+  <div style="text-align:center;"><a href="participation.html" class="btn btn-primary"><span data-lang="ar">دليل المشاركة الكامل</span><span data-lang="en">Full Participation Guide</span></a></div>
+</div>
+
+<div class="bg-alt" style="padding:4.5rem 2rem;"><div class="cta-wrap">
+  <div style="font-size:2.8rem;margin-bottom:1rem;">🔬🧬🦠</div>
+  <h2 style="font-size:1.6rem;font-weight:800;color:var(--text);margin-bottom:.9rem;"><span data-lang="ar">نرحب بمشاركتكم في هذا الحدث العلمي المتميز</span><span data-lang="en">Welcome to Join This Distinguished Scientific Conference</span></h2>
+  <p style="color:var(--muted);max-width:540px;margin:0 auto 2rem;line-height:1.85;font-size:.9rem;"><span data-lang="ar">يسعد الجمعية العراقية لعلم الأحياء المجهرية دعوة جميع الباحثين والأكاديميين للمشاركة في المؤتمر العلمي الأول — 21 – 22 أكتوبر 2026</span><span data-lang="en">The Iraqi Society for Microbiology warmly invites all researchers and academics to the First Scientific Conference — October 21 – 22, 2026</span></p>
+  <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+    <a href="https://edas.info/35135" target="_blank" class="btn btn-secondary">📋 <span data-lang="ar">التسجيل</span><span data-lang="en">Registration</span></a>
+    <a href="https://edas.info/N35135" target="_blank" class="btn btn-primary">🚀 <span data-lang="ar">رفع البحث</span><span data-lang="en">Submit Paper</span></a>
+  </div>
+</div></div>
+
+<footer><div class="footer-inner"><div class="footer-logo"><img src="assets/logo.png" alt="ISMB"></div>
+  <div class="footer-name"><span data-lang="ar">الجمعية العراقية لعلم الأحياء المجهرية</span><span data-lang="en">Iraqi Society for Microbiology</span></div>
+  <div class="footer-sub">Iraqi Society for Microbiology (ISMB) — First Scientific Conference 2026</div>
+  <div class="footer-divider"></div>
+  <ul class="footer-links">
+    <li><a href="index.html"><span data-lang="ar">الرئيسية</span><span data-lang="en">Home</span></a></li>
+    <li><a href="about.html"><span data-lang="ar">عن المؤتمر</span><span data-lang="en">About</span></a></li>
+    <li><a href="speakers.html"><span data-lang="ar">المتحدثون</span><span data-lang="en">Speakers</span></a></li>
+    <li><a href="committees.html"><span data-lang="ar">اللجان</span><span data-lang="en">Committees</span></a></li>
+    <li><a href="themes.html"><span data-lang="ar">المحاور</span><span data-lang="en">Themes</span></a></li>
+    <li><a href="dates.html"><span data-lang="ar">المواعيد</span><span data-lang="en">Dates</span></a></li>
+    <li><a href="participation.html"><span data-lang="ar">المشاركة</span><span data-lang="en">Participate</span></a></li>
+    <li><a href="contact.html"><span data-lang="ar">التواصل</span><span data-lang="en">Contact</span></a></li>
+  </ul>
+  <div class="footer-copy">© <span data-lang="ar">الجمعية العراقية لعلم الأحياء المجهرية — المؤتمر العلمي الأول 2026 — جميع الحقوق محفوظة</span><span data-lang="en">Iraqi Society for Microbiology — First Scientific Conference 2026 — All Rights Reserved</span></div>
+</div></footer>
+<script src="assets/lang.js"></script>
+<script>function toggleMenu(){document.getElementById("mM").classList.toggle("open");}</script>
+<script>
+function tick(){
+  var t=new Date('2026-10-21T08:00:00')-new Date();
+  if(t<=0)return;
+  var p=function(n){return String(Math.floor(n)).padStart(2,'0');};
+  document.getElementById('cd').textContent=p(t/864e5);
+  document.getElementById('ch').textContent=p((t%864e5)/36e5);
+  document.getElementById('cm').textContent=p((t%36e5)/6e4);
+  document.getElementById('cs').textContent=p((t%6e4)/1e3);
+}
+tick();setInterval(tick,1000);
+</script>
+</body>
+</html>
