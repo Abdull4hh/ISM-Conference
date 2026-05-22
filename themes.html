@@ -12,63 +12,319 @@
   <div class="section-label">5 SCIENTIFIC THEMES</div>
   <h2 class="section-title"><span data-lang="ar">المحاور <em>العلمية</em></span><span data-lang="en">Scientific <em>Themes</em></span></h2>
   <div class="section-line"></div>
-  <div style="background:var(--card);border:1.5px solid var(--border);border-radius:18px;padding:2rem;display:grid;grid-template-columns:auto 1fr;gap:1.8rem;align-items:start;box-shadow:var(--shadow);transition:all .28s;margin-bottom:1.4rem;position:relative;overflow:hidden;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='var(--shadow-h)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
+  <div style="display:flex;flex-direction:column;gap:1.5rem;">
+
+  <div style="background:var(--card);border:1.5px solid var(--border);border-radius:18px;padding:2rem;box-shadow:var(--shadow);transition:all .28s;position:relative;overflow:hidden;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-h)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
     <div style="position:absolute;top:0;right:0;width:4px;height:100%;background:linear-gradient(180deg,var(--blue),var(--cyan));"></div>
-    <div style="width:55px;height:55px;background:linear-gradient(135deg,var(--blue),var(--cyan));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:900;color:#fff;flex-shrink:0;">1</div>
-    <div>
-      <div style="font-size:1.05rem;font-weight:800;color:var(--text);margin-bottom:.25rem;"><span data-lang="ar">الأحياء المجهرية الطبية والأمراض المعدية</span><span data-lang="en">Medical Microbiology & Infectious Diseases</span></div>
-      <div style="font-size:.76rem;color:var(--sky);margin-bottom:.8rem;">Medical Microbiology & Infectious Diseases</div>
-      <div style="font-size:.84rem;color:var(--muted);line-height:1.8;margin-bottom:.9rem;"><span data-lang="ar">الدراسات المتعلقة بالبكتيريا والفيروسات والفطريات والطفيليات المسببة للأمراض المعدية، وآليات العدوى والانتشار الوبائي، وأساليب المكافحة الحديثة.</span><span data-lang="en">Studies on bacteria, viruses, fungi, and parasites causing infectious diseases, mechanisms of infection and epidemic spread, and modern control methods.</span></div>
-      <div><span class="tag">البكتيريا المُمرِضة</span><span class="tag">الفيروسات</span><span class="tag">Epidemiology</span><span class="tag">Infectious Control</span></div>
+
+    <!-- Number + Theme Name -->
+    <div style="display:flex;align-items:flex-start;gap:1rem;margin-bottom:1rem;">
+      <div style="width:40px;height:40px;background:linear-gradient(135deg,var(--blue),var(--cyan));border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;font-size:1rem;flex-shrink:0;">1</div>
+      <div>
+        <div style="font-size:1rem;font-weight:800;color:var(--text);line-height:1.35;"><span data-lang="ar">الأحياء المجهرية الطبية والأمراض المعدية</span><span data-lang="en">Medical Microbiology & Infectious Diseases</span></div>
+        <div style="font-size:.73rem;color:var(--sky);margin-top:.15rem;font-weight:500;">Medical Microbiology & Infectious Diseases</div>
+      </div>
+    </div>
+
+    <!-- Description -->
+    <div style="font-size:.82rem;color:var(--muted);line-height:1.8;margin-bottom:1.1rem;">
+      <span data-lang="ar">الدراسات المتعلقة بالبكتيريا والفيروسات والفطريات والطفيليات المسببة للأمراض المعدية، وآليات العدوى والانتشار الوبائي، وأساليب المكافحة الحديثة.</span>
+      <span data-lang="en">Studies on bacteria, viruses, fungi, and parasites causing infectious diseases, mechanisms of epidemic spread, and modern control methods.</span>
+    </div>
+
+    <!-- Tags -->
+    <div style="margin-bottom:1.3rem;"><span class="tag">البكتيريا المُمرِضة</span><span class="tag">الفيروسات</span><span class="tag">Epidemiology</span><span class="tag">Infectious Control</span></div>
+
+    <!-- Coordinator Card -->
+    <div style="
+      background:linear-gradient(135deg,var(--bg2),var(--bg3));
+      border:1.5px solid var(--border2);
+      border-radius:14px;padding:1rem 1.3rem;
+      display:flex;align-items:center;gap:1rem;flex-wrap:wrap;
+    ">
+      <div style="
+        width:46px;height:46px;border-radius:50%;
+        background:linear-gradient(135deg,var(--blue),var(--cyan));
+        display:flex;align-items:center;justify-content:center;
+        font-size:1.2rem;color:#fff;flex-shrink:0;
+        box-shadow:0 3px 10px rgba(18,71,165,.22);
+      ">👤</div>
+      <div style="flex:1;min-width:150px;">
+        <div style="font-size:.68rem;color:var(--blue);font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:.18rem;">
+          <span data-lang="ar">مسؤول المحور</span><span data-lang="en">Theme Coordinator</span>
+        </div>
+        <div style="font-size:.92rem;font-weight:800;color:var(--text);margin-bottom:.12rem;">
+          <span data-lang="ar">د. آمنة محمد علي</span><span data-lang="en">Dr. Amna M. Ali</span>
+        </div>
+        <div style="font-size:.76rem;color:var(--muted);">
+          <span data-lang="en">د. آمنة محمد علي</span><span data-lang="ar">Dr. Amna M. Ali</span>
+        </div>
+      </div>
+      <a href="mailto:dr.amnaalhashimi@uomustansiriyah.edu.iq" style="
+        display:inline-flex;align-items:center;gap:.4rem;
+        background:var(--card);border:1.5px solid var(--border2);
+        border-radius:50px;padding:.38rem 1rem;
+        font-size:.75rem;font-weight:600;color:var(--blue);
+        text-decoration:none;transition:all .2s;white-space:nowrap;
+        box-shadow:0 2px 8px rgba(18,71,165,.1);
+      " onmouseover="this.style.background='var(--blue)';this.style.color='#fff'" onmouseout="this.style.background='var(--card)';this.style.color='var(--blue)'">
+        📧 dr.amnaalhashimi@uomustansiriyah.edu.iq
+      </a>
     </div>
   </div>
-  <div style="background:var(--card);border:1.5px solid var(--border);border-radius:18px;padding:2rem;display:grid;grid-template-columns:auto 1fr;gap:1.8rem;align-items:start;box-shadow:var(--shadow);transition:all .28s;margin-bottom:1.4rem;position:relative;overflow:hidden;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='var(--shadow-h)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
+
+  <div style="background:var(--card);border:1.5px solid var(--border);border-radius:18px;padding:2rem;box-shadow:var(--shadow);transition:all .28s;position:relative;overflow:hidden;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-h)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
     <div style="position:absolute;top:0;right:0;width:4px;height:100%;background:linear-gradient(180deg,var(--blue),var(--cyan));"></div>
-    <div style="width:55px;height:55px;background:linear-gradient(135deg,var(--blue),var(--cyan));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:900;color:#fff;flex-shrink:0;">2</div>
-    <div>
-      <div style="font-size:1.05rem;font-weight:800;color:var(--text);margin-bottom:.25rem;"><span data-lang="ar">مقاومة المضادات المايكروبية والتقنيات الجزيئية</span><span data-lang="en">AMR & Molecular Diagnostic Techniques</span></div>
-      <div style="font-size:.76rem;color:var(--sky);margin-bottom:.8rem;">AMR & Molecular Diagnostic Techniques</div>
-      <div style="font-size:.84rem;color:var(--muted);line-height:1.8;margin-bottom:.9rem;"><span data-lang="ar">ظاهرة AMR وآليات المقاومة الجينية والبيوكيميائية، وتطبيقات PCR وتسلسل الجيل الثالث والتقنيات الجزيئية الحديثة في التشخيص المختبري.</span><span data-lang="en">Antimicrobial resistance (AMR), genetic/biochemical resistance mechanisms, PCR, next-gen sequencing and modern molecular diagnostic techniques.</span></div>
-      <div><span class="tag">AMR</span><span class="tag">PCR</span><span class="tag">NGS</span><span class="tag">Molecular Diagnostics</span></div>
+
+    <!-- Number + Theme Name -->
+    <div style="display:flex;align-items:flex-start;gap:1rem;margin-bottom:1rem;">
+      <div style="width:40px;height:40px;background:linear-gradient(135deg,var(--blue),var(--cyan));border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;font-size:1rem;flex-shrink:0;">2</div>
+      <div>
+        <div style="font-size:1rem;font-weight:800;color:var(--text);line-height:1.35;"><span data-lang="ar">مقاومة المضادات المايكروبية والتقنيات الجزيئية في التشخيص المختبري</span><span data-lang="en">AMR & Molecular Diagnostic Techniques</span></div>
+        <div style="font-size:.73rem;color:var(--sky);margin-top:.15rem;font-weight:500;">AMR & Molecular Diagnostic Techniques</div>
+      </div>
+    </div>
+
+    <!-- Description -->
+    <div style="font-size:.82rem;color:var(--muted);line-height:1.8;margin-bottom:1.1rem;">
+      <span data-lang="ar">ظاهرة AMR وآليات المقاومة الجينية والبيوكيميائية، وتطبيقات PCR وتسلسل الجيل الثالث والتقنيات الجزيئية الحديثة في التشخيص المختبري الدقيق.</span>
+      <span data-lang="en">Antimicrobial resistance (AMR), genetic and biochemical resistance mechanisms, PCR, next-gen sequencing, and modern molecular diagnostics.</span>
+    </div>
+
+    <!-- Tags -->
+    <div style="margin-bottom:1.3rem;"><span class="tag">AMR</span><span class="tag">PCR</span><span class="tag">NGS</span><span class="tag">Molecular Diagnostics</span></div>
+
+    <!-- Coordinator Card -->
+    <div style="
+      background:linear-gradient(135deg,var(--bg2),var(--bg3));
+      border:1.5px solid var(--border2);
+      border-radius:14px;padding:1rem 1.3rem;
+      display:flex;align-items:center;gap:1rem;flex-wrap:wrap;
+    ">
+      <div style="
+        width:46px;height:46px;border-radius:50%;
+        background:linear-gradient(135deg,var(--blue),var(--cyan));
+        display:flex;align-items:center;justify-content:center;
+        font-size:1.2rem;color:#fff;flex-shrink:0;
+        box-shadow:0 3px 10px rgba(18,71,165,.22);
+      ">👤</div>
+      <div style="flex:1;min-width:150px;">
+        <div style="font-size:.68rem;color:var(--blue);font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:.18rem;">
+          <span data-lang="ar">مسؤول المحور</span><span data-lang="en">Theme Coordinator</span>
+        </div>
+        <div style="font-size:.92rem;font-weight:800;color:var(--text);margin-bottom:.12rem;">
+          <span data-lang="ar">أ.د. سوسن محمد كريم</span><span data-lang="en">Prof. Dr. Sawsan Mohammed Kareem</span>
+        </div>
+        <div style="font-size:.76rem;color:var(--muted);">
+          <span data-lang="en">أ.د. سوسن محمد كريم</span><span data-lang="ar">Prof. Dr. Sawsan Mohammed Kareem</span>
+        </div>
+      </div>
+      <a href="mailto:stsq@uomustansiriyah.edu.iq" style="
+        display:inline-flex;align-items:center;gap:.4rem;
+        background:var(--card);border:1.5px solid var(--border2);
+        border-radius:50px;padding:.38rem 1rem;
+        font-size:.75rem;font-weight:600;color:var(--blue);
+        text-decoration:none;transition:all .2s;white-space:nowrap;
+        box-shadow:0 2px 8px rgba(18,71,165,.1);
+      " onmouseover="this.style.background='var(--blue)';this.style.color='#fff'" onmouseout="this.style.background='var(--card)';this.style.color='var(--blue)'">
+        📧 stsq@uomustansiriyah.edu.iq
+      </a>
     </div>
   </div>
-  <div style="background:var(--card);border:1.5px solid var(--border);border-radius:18px;padding:2rem;display:grid;grid-template-columns:auto 1fr;gap:1.8rem;align-items:start;box-shadow:var(--shadow);transition:all .28s;margin-bottom:1.4rem;position:relative;overflow:hidden;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='var(--shadow-h)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
+
+  <div style="background:var(--card);border:1.5px solid var(--border);border-radius:18px;padding:2rem;box-shadow:var(--shadow);transition:all .28s;position:relative;overflow:hidden;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-h)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
     <div style="position:absolute;top:0;right:0;width:4px;height:100%;background:linear-gradient(180deg,var(--blue),var(--cyan));"></div>
-    <div style="width:55px;height:55px;background:linear-gradient(135deg,var(--blue),var(--cyan));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:900;color:#fff;flex-shrink:0;">3</div>
-    <div>
-      <div style="font-size:1.05rem;font-weight:800;color:var(--text);margin-bottom:.25rem;"><span data-lang="ar">الاستجابة المناعية للعدوى الميكروبية</span><span data-lang="en">Immune Response to Microbial Infections</span></div>
-      <div style="font-size:.76rem;color:var(--sky);margin-bottom:.8rem;">Immune Response to Microbial Infections</div>
-      <div style="font-size:.84rem;color:var(--muted);line-height:1.8;margin-bottom:.9rem;"><span data-lang="ar">آليات الاستجابة المناعية الفطرية والتكيفية، وتطبيقاتها في التشخيص المصلي وتطوير اللقاحات والبروتوكولات العلاجية المناعية.</span><span data-lang="en">Innate and adaptive immune response mechanisms and their applications in serological diagnosis, vaccine development, and immunotherapy protocols.</span></div>
-      <div><span class="tag">Innate Immunity</span><span class="tag">Adaptive Immunity</span><span class="tag">Vaccines</span><span class="tag">Immunotherapy</span></div>
+
+    <!-- Number + Theme Name -->
+    <div style="display:flex;align-items:flex-start;gap:1rem;margin-bottom:1rem;">
+      <div style="width:40px;height:40px;background:linear-gradient(135deg,var(--blue),var(--cyan));border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;font-size:1rem;flex-shrink:0;">3</div>
+      <div>
+        <div style="font-size:1rem;font-weight:800;color:var(--text);line-height:1.35;"><span data-lang="ar">الاستجابة المناعية للعدوى الميكروبية وتطبيقاتها التشخيصية والعلاجية</span><span data-lang="en">Immune Response to Microbial Infections</span></div>
+        <div style="font-size:.73rem;color:var(--sky);margin-top:.15rem;font-weight:500;">Immune Response to Microbial Infections</div>
+      </div>
+    </div>
+
+    <!-- Description -->
+    <div style="font-size:.82rem;color:var(--muted);line-height:1.8;margin-bottom:1.1rem;">
+      <span data-lang="ar">آليات الاستجابة المناعية الفطرية والتكيفية، وتطبيقاتها في التشخيص المصلي وتطوير اللقاحات والبروتوكولات العلاجية المناعية.</span>
+      <span data-lang="en">Innate and adaptive immunity mechanisms and their applications in serological diagnosis, vaccine development, and immunotherapy protocols.</span>
+    </div>
+
+    <!-- Tags -->
+    <div style="margin-bottom:1.3rem;"><span class="tag">Innate Immunity</span><span class="tag">Adaptive Immunity</span><span class="tag">Vaccines</span><span class="tag">Immunotherapy</span></div>
+
+    <!-- Coordinator Card -->
+    <div style="
+      background:linear-gradient(135deg,var(--bg2),var(--bg3));
+      border:1.5px solid var(--border2);
+      border-radius:14px;padding:1rem 1.3rem;
+      display:flex;align-items:center;gap:1rem;flex-wrap:wrap;
+    ">
+      <div style="
+        width:46px;height:46px;border-radius:50%;
+        background:linear-gradient(135deg,var(--blue),var(--cyan));
+        display:flex;align-items:center;justify-content:center;
+        font-size:1.2rem;color:#fff;flex-shrink:0;
+        box-shadow:0 3px 10px rgba(18,71,165,.22);
+      ">👤</div>
+      <div style="flex:1;min-width:150px;">
+        <div style="font-size:.68rem;color:var(--blue);font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:.18rem;">
+          <span data-lang="ar">مسؤول المحور</span><span data-lang="en">Theme Coordinator</span>
+        </div>
+        <div style="font-size:.92rem;font-weight:800;color:var(--text);margin-bottom:.12rem;">
+          <span data-lang="ar">أ.د. ختام حبيب رسول</span><span data-lang="en">Prof. Dr. Khetam Habeeb Rasool</span>
+        </div>
+        <div style="font-size:.76rem;color:var(--muted);">
+          <span data-lang="en">أ.د. ختام حبيب رسول</span><span data-lang="ar">Prof. Dr. Khetam Habeeb Rasool</span>
+        </div>
+      </div>
+      <a href="mailto:Dr.khr@uomustansiriyah.edu.iq" style="
+        display:inline-flex;align-items:center;gap:.4rem;
+        background:var(--card);border:1.5px solid var(--border2);
+        border-radius:50px;padding:.38rem 1rem;
+        font-size:.75rem;font-weight:600;color:var(--blue);
+        text-decoration:none;transition:all .2s;white-space:nowrap;
+        box-shadow:0 2px 8px rgba(18,71,165,.1);
+      " onmouseover="this.style.background='var(--blue)';this.style.color='#fff'" onmouseout="this.style.background='var(--card)';this.style.color='var(--blue)'">
+        📧 Dr.khr@uomustansiriyah.edu.iq
+      </a>
     </div>
   </div>
-  <div style="background:var(--card);border:1.5px solid var(--border);border-radius:18px;padding:2rem;display:grid;grid-template-columns:auto 1fr;gap:1.8rem;align-items:start;box-shadow:var(--shadow);transition:all .28s;margin-bottom:1.4rem;position:relative;overflow:hidden;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='var(--shadow-h)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
+
+  <div style="background:var(--card);border:1.5px solid var(--border);border-radius:18px;padding:2rem;box-shadow:var(--shadow);transition:all .28s;position:relative;overflow:hidden;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-h)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
     <div style="position:absolute;top:0;right:0;width:4px;height:100%;background:linear-gradient(180deg,var(--blue),var(--cyan));"></div>
-    <div style="width:55px;height:55px;background:linear-gradient(135deg,var(--blue),var(--cyan));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:900;color:#fff;flex-shrink:0;">4</div>
-    <div>
-      <div style="font-size:1.05rem;font-weight:800;color:var(--text);margin-bottom:.25rem;"><span data-lang="ar">المعززات الحيوية ودورها في الصحة</span><span data-lang="en">Probiotics & Bioenhancers in Public Health</span></div>
-      <div style="font-size:.76rem;color:var(--sky);margin-bottom:.8rem;">Probiotics & Bioenhancers in Public Health</div>
-      <div style="font-size:.84rem;color:var(--muted);line-height:1.8;margin-bottom:.9rem;"><span data-lang="ar">دور البروبيوتيك والمعززات الحيوية في تعزيز صحة الإنسان والحيوان، وتطبيقاتها في الصناعات الغذائية والدوائية والزراعية.</span><span data-lang="en">Role of probiotics and bioenhancers in human and animal health, and their applications in food, pharmaceutical, and agricultural industries.</span></div>
-      <div><span class="tag">Probiotics</span><span class="tag">Microbiome</span><span class="tag">Prebiotics</span><span class="tag">Food Industry</span></div>
+
+    <!-- Number + Theme Name -->
+    <div style="display:flex;align-items:flex-start;gap:1rem;margin-bottom:1rem;">
+      <div style="width:40px;height:40px;background:linear-gradient(135deg,var(--blue),var(--cyan));border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;font-size:1rem;flex-shrink:0;">4</div>
+      <div>
+        <div style="font-size:1rem;font-weight:800;color:var(--text);line-height:1.35;"><span data-lang="ar">المعززات الحيوية ودورها في الصحة</span><span data-lang="en">Probiotics & Bioenhancers in Public Health</span></div>
+        <div style="font-size:.73rem;color:var(--sky);margin-top:.15rem;font-weight:500;">Probiotics & Bioenhancers in Public Health</div>
+      </div>
+    </div>
+
+    <!-- Description -->
+    <div style="font-size:.82rem;color:var(--muted);line-height:1.8;margin-bottom:1.1rem;">
+      <span data-lang="ar">دور البروبيوتيك والمعززات الحيوية في تعزيز صحة الإنسان والحيوان، وتطبيقاتها في الصناعات الغذائية والدوائية والزراعية.</span>
+      <span data-lang="en">Role of probiotics and bioenhancers in human and animal health and their applications in food, pharmaceutical, and agricultural industries.</span>
+    </div>
+
+    <!-- Tags -->
+    <div style="margin-bottom:1.3rem;"><span class="tag">Probiotics</span><span class="tag">Microbiome</span><span class="tag">Prebiotics</span><span class="tag">Food Industry</span></div>
+
+    <!-- Coordinator Card -->
+    <div style="
+      background:linear-gradient(135deg,var(--bg2),var(--bg3));
+      border:1.5px solid var(--border2);
+      border-radius:14px;padding:1rem 1.3rem;
+      display:flex;align-items:center;gap:1rem;flex-wrap:wrap;
+    ">
+      <div style="
+        width:46px;height:46px;border-radius:50%;
+        background:linear-gradient(135deg,var(--blue),var(--cyan));
+        display:flex;align-items:center;justify-content:center;
+        font-size:1.2rem;color:#fff;flex-shrink:0;
+        box-shadow:0 3px 10px rgba(18,71,165,.22);
+      ">👤</div>
+      <div style="flex:1;min-width:150px;">
+        <div style="font-size:.68rem;color:var(--blue);font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:.18rem;">
+          <span data-lang="ar">مسؤول المحور</span><span data-lang="en">Theme Coordinator</span>
+        </div>
+        <div style="font-size:.92rem;font-weight:800;color:var(--text);margin-bottom:.12rem;">
+          <span data-lang="ar">أ.د. بثينة عبد الحمزة حسون</span><span data-lang="en">Prof. Dr. Butheina A. Hamza Hasoon</span>
+        </div>
+        <div style="font-size:.76rem;color:var(--muted);">
+          <span data-lang="en">أ.د. بثينة عبد الحمزة حسون</span><span data-lang="ar">Prof. Dr. Butheina A. Hamza Hasoon</span>
+        </div>
+      </div>
+      <a href="mailto:Buthenia.h.hasoon@uotechnology.edu.iq" style="
+        display:inline-flex;align-items:center;gap:.4rem;
+        background:var(--card);border:1.5px solid var(--border2);
+        border-radius:50px;padding:.38rem 1rem;
+        font-size:.75rem;font-weight:600;color:var(--blue);
+        text-decoration:none;transition:all .2s;white-space:nowrap;
+        box-shadow:0 2px 8px rgba(18,71,165,.1);
+      " onmouseover="this.style.background='var(--blue)';this.style.color='#fff'" onmouseout="this.style.background='var(--card)';this.style.color='var(--blue)'">
+        📧 Buthenia.h.hasoon@uotechnology.edu.iq
+      </a>
     </div>
   </div>
-  <div style="background:var(--card);border:1.5px solid var(--border);border-radius:18px;padding:2rem;display:grid;grid-template-columns:auto 1fr;gap:1.8rem;align-items:start;box-shadow:var(--shadow);transition:all .28s;margin-bottom:1.4rem;position:relative;overflow:hidden;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='var(--shadow-h)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
+
+  <div style="background:var(--card);border:1.5px solid var(--border);border-radius:18px;padding:2rem;box-shadow:var(--shadow);transition:all .28s;position:relative;overflow:hidden;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-h)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
     <div style="position:absolute;top:0;right:0;width:4px;height:100%;background:linear-gradient(180deg,var(--blue),var(--cyan));"></div>
-    <div style="width:55px;height:55px;background:linear-gradient(135deg,var(--blue),var(--cyan));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:900;color:#fff;flex-shrink:0;">5</div>
-    <div>
-      <div style="font-size:1.05rem;font-weight:800;color:var(--text);margin-bottom:.25rem;"><span data-lang="ar">الأحياء المجهرية التطبيقية والبيئية</span><span data-lang="en">Applied & Environmental Microbiology</span></div>
-      <div style="font-size:.76rem;color:var(--sky);margin-bottom:.8rem;">Applied & Environmental Microbiology</div>
-      <div style="font-size:.84rem;color:var(--muted);line-height:1.8;margin-bottom:.9rem;"><span data-lang="ar">التطبيقات البيئية والصناعية والزراعية لعلم الأحياء المجهرية، بما يشمل Bioremediation والإنتاج الحيوي والتخمير.</span><span data-lang="en">Environmental, industrial, and agricultural applications of microbiology, including bioremediation, bioproduction, and fermentation processes.</span></div>
-      <div><span class="tag">Bioremediation</span><span class="tag">Fermentation</span><span class="tag">Bioproduction</span><span class="tag">Agri-Microbiology</span></div>
+
+    <!-- Number + Theme Name -->
+    <div style="display:flex;align-items:flex-start;gap:1rem;margin-bottom:1rem;">
+      <div style="width:40px;height:40px;background:linear-gradient(135deg,var(--blue),var(--cyan));border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;font-size:1rem;flex-shrink:0;">5</div>
+      <div>
+        <div style="font-size:1rem;font-weight:800;color:var(--text);line-height:1.35;"><span data-lang="ar">الأحياء المجهرية التطبيقية والبيئية</span><span data-lang="en">Applied & Environmental Microbiology</span></div>
+        <div style="font-size:.73rem;color:var(--sky);margin-top:.15rem;font-weight:500;">Applied & Environmental Microbiology</div>
+      </div>
+    </div>
+
+    <!-- Description -->
+    <div style="font-size:.82rem;color:var(--muted);line-height:1.8;margin-bottom:1.1rem;">
+      <span data-lang="ar">التطبيقات البيئية والصناعية والزراعية لعلم الأحياء المجهرية، بما يشمل Bioremediation والإنتاج الحيوي وعمليات التخمير.</span>
+      <span data-lang="en">Environmental, industrial, and agricultural microbiology applications including bioremediation, bioproduction, and fermentation processes.</span>
+    </div>
+
+    <!-- Tags -->
+    <div style="margin-bottom:1.3rem;"><span class="tag">Bioremediation</span><span class="tag">Fermentation</span><span class="tag">Bioproduction</span><span class="tag">Agri-Microbiology</span></div>
+
+    <!-- Coordinator Card -->
+    <div style="
+      background:linear-gradient(135deg,var(--bg2),var(--bg3));
+      border:1.5px solid var(--border2);
+      border-radius:14px;padding:1rem 1.3rem;
+      display:flex;align-items:center;gap:1rem;flex-wrap:wrap;
+    ">
+      <div style="
+        width:46px;height:46px;border-radius:50%;
+        background:linear-gradient(135deg,var(--blue),var(--cyan));
+        display:flex;align-items:center;justify-content:center;
+        font-size:1.2rem;color:#fff;flex-shrink:0;
+        box-shadow:0 3px 10px rgba(18,71,165,.22);
+      ">👤</div>
+      <div style="flex:1;min-width:150px;">
+        <div style="font-size:.68rem;color:var(--blue);font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:.18rem;">
+          <span data-lang="ar">مسؤول المحور</span><span data-lang="en">Theme Coordinator</span>
+        </div>
+        <div style="font-size:.92rem;font-weight:800;color:var(--text);margin-bottom:.12rem;">
+          <span data-lang="ar">أ.د. رنا هادي حميد</span><span data-lang="en">Prof. Dr. Rana Hadi Hameed</span>
+        </div>
+        <div style="font-size:.76rem;color:var(--muted);">
+          <span data-lang="en">أ.د. رنا هادي حميد</span><span data-lang="ar">Prof. Dr. Rana Hadi Hameed</span>
+        </div>
+      </div>
+      <a href="mailto:Dr.rana@uomustansiriyah.edu.iq" style="
+        display:inline-flex;align-items:center;gap:.4rem;
+        background:var(--card);border:1.5px solid var(--border2);
+        border-radius:50px;padding:.38rem 1rem;
+        font-size:.75rem;font-weight:600;color:var(--blue);
+        text-decoration:none;transition:all .2s;white-space:nowrap;
+        box-shadow:0 2px 8px rgba(18,71,165,.1);
+      " onmouseover="this.style.background='var(--blue)';this.style.color='#fff'" onmouseout="this.style.background='var(--card)';this.style.color='var(--blue)'">
+        📧 Dr.rana@uomustansiriyah.edu.iq
+      </a>
     </div>
   </div>
-  <div style="text-align:center;margin-top:2rem;background:linear-gradient(135deg,var(--bg2),var(--bg3));border:1.5px solid var(--border);border-radius:16px;padding:2rem;">
-    <p style="color:var(--muted);margin-bottom:1.4rem;font-size:.9rem;"><span data-lang="ar">هل بحثك يندرج ضمن أحد هذه المحاور؟ قدّم ملخصك الآن</span><span data-lang="en">Does your research fit one of these themes? Submit your abstract now.</span></p>
+  </div>
+
+  <div style="text-align:center;margin-top:2.5rem;background:linear-gradient(135deg,var(--bg2),var(--bg3));border:1.5px solid var(--border);border-radius:16px;padding:2rem;">
+    <p style="color:var(--muted);margin-bottom:1.4rem;font-size:.9rem;">
+      <span data-lang="ar">هل بحثك يندرج ضمن أحد هذه المحاور؟ قدّم ملخصك الآن</span>
+      <span data-lang="en">Does your research fit one of these themes? Submit your abstract now.</span>
+    </p>
     <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
-      <a href="https://edas.info/35135" target="_blank" class="btn btn-secondary"><span data-lang="ar">📋 التسجيل أولاً</span><span data-lang="en">📋 Register First</span></a>
-      <a href="https://edas.info/N35135" target="_blank" class="btn btn-primary"><span data-lang="ar">🚀 رفع البحث عبر EDAS</span><span data-lang="en">🚀 Submit via EDAS</span></a>
+      <a href="https://edas.info/35135" target="_blank" class="btn btn-secondary">
+        <span data-lang="ar">📋 التسجيل أولاً</span><span data-lang="en">📋 Register First</span>
+      </a>
+      <a href="https://edas.info/N35135" target="_blank" class="btn btn-primary">
+        <span data-lang="ar">🚀 رفع البحث عبر EDAS</span><span data-lang="en">🚀 Submit via EDAS</span>
+      </a>
     </div>
   </div>
+
 </div>
 <footer><div class="footer-inner"><div class="footer-logo"><img src="assets/logo.png" alt="ISMB"></div>
   <div class="footer-name"><span data-lang="ar">الجمعية العراقية لعلم الأحياء المجهرية</span><span data-lang="en">Iraqi Society for Microbiology</span></div>
