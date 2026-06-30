@@ -47,8 +47,8 @@ nav{
 }
 .nav-brand{display:flex;align-items:center;gap:11px;text-decoration:none;flex-shrink:0;}
 .nav-brand img{height:40px;width:40px;border-radius:50%;background:#fff;padding:2px;border:2px solid var(--border2);object-fit:contain;}
-.nav-brand-text .t1{font-size:.76rem;font-weight:800;color:var(--blue);line-height:1.2;}
-.nav-brand-text .t2{font-size:.6rem;color:var(--light-muted);letter-spacing:.5px;text-transform:uppercase;}
+.nav-brand-text{max-width:230px;}
+.nav-brand-text .t1{font-size:.68rem;font-weight:800;color:var(--blue);line-height:1.32;display:block;}
 .nav-links{display:flex;gap:0;list-style:none;align-items:center;}
 .nav-links a{text-decoration:none;color:var(--text2);font-size:.8rem;font-weight:500;padding:.36rem .7rem;border-radius:7px;transition:all .2s;white-space:nowrap;}
 .nav-links a:hover{color:var(--blue);background:rgba(18,71,165,.07);}
